@@ -1,5 +1,5 @@
 package queue;
-public class Cola<e> extends supercola<e> {
+public class Cola implements supercola{
 
     private Object[] cola;
     private int inicio;
