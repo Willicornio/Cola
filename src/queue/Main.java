@@ -6,11 +6,14 @@ public class Main {
         Cola cola = new Cola(4);
         cola.print();
         cola.pull();
-        cola.push("Haberlas");
-        cola.push("tractor");
-        cola.push("23");
-        cola.push("22");
-        cola.push("11");
+        cola.push("Primer elemento");
+        cola.push("Segundo");
+        cola.push("tercer elemento");
+        cola.push("4º");
+        cola.push("ultimoo");
         cola.print();
+        cola.pull();
+        cola.print();
+
     }
 }

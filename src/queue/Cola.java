@@ -1,5 +1,6 @@
 package queue;
-public class Cola implements supercola{
+
+public class Cola implements supercola {
 
     private Object[] cola;
     private int inicio;
@@ -18,16 +19,22 @@ public boolean isFull(){
         return fin == cola.length-1;
 }
 
-public void push(Object elemento){
-        if(isFull()) {
-            System.out.println("La cola está llenisima quita algo");
-        }
-        else {
-            cola[++fin] = elemento;
-        }
-}
-public Object pull(){
+public void push(Object elemento) throws errores{
+
+    if (isFull())
+        throw new errores();
+
+    else {
+        cola[++fin] = elemento;
+    }
+
+
+
+    }
+
+public Object pull() {
         if (isEmpty()){
+
             System.out.println("La cola esta vacia pon cosas");
             return "Cola vacia"; //esto hay que ponerlo porque returnamos un objeto, hay que returnar siempre algo
         }
